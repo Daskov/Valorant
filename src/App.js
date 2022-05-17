@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import AdminContext from "./Contexts/AdminContext";
+import UserContext from "./Contexts/UserContext";
+import Navigation from "./Navigation";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <UserContext>
+      <AdminContext>
+        <Navigation />
+      </AdminContext>
+    </UserContext>
+  );
+};
 
-export default App
+export default App;

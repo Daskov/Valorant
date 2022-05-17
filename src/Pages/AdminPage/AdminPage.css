@@ -1,0 +1,196 @@
+.agents-cards {
+  background: url(../../Assets/IntroImages/bgofadmin.png);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.agent-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  row-gap: 15px;
+}
+
+.agent-form input {
+  height: 30px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 1px solid #bebebe;
+  padding: 7px;
+  margin: 0px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  outline: none;
+  border-radius: 7px;
+  background: rgb(63, 62, 62);
+  color: white;
+}
+
+.agent-form input:focus {
+  -moz-box-shadow: 0 0 8px #2c2f2f;
+  -webkit-box-shadow: 0 0 8px #343535;
+  box-shadow: 0 0 8px #252626;
+  border: 1px solid #3e4041;
+  background: rgb(88, 87, 87);
+}
+
+.agent-form select {
+  height: 30px;
+  border-radius: 7px;
+  background: rgb(63, 62, 62);
+  color: white;
+}
+
+.agent-form textarea {
+  border-radius: 7px;
+  background: rgb(63, 62, 62);
+  color: white;
+  -moz-box-shadow: 0 0 8px #2c2f2f;
+  -webkit-box-shadow: 0 0 8px #343535;
+  box-shadow: 0 0 8px #252626;
+  border: 1px solid #3e4041;
+}
+
+.agent-form textarea:focus {
+  outline: none;
+  background: rgb(88, 87, 87);
+}
+
+.agent-form button {
+  height: 35px;
+  width: 60px;
+  margin: 0 auto;
+  font-family: "VALORANT", sans-serif;
+  font-size: 20px;
+  border: none;
+  text-align: center;
+  border-radius: 7px;
+  transition: 0.2s;
+}
+
+.agent-form button:hover {
+  background-color: rgb(14, 191, 14);
+  color: white;
+}
+
+.card-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 40px;
+}
+
+.admin-cards {
+  display: grid;
+  grid-template-columns: 170px 170px 170px;
+  gap: 30px;
+}
+
+.admin-card {
+  background: #212d3a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 250px;
+  opacity: 0.8;
+  padding: 10px;
+  border-radius: 7px;
+  transition: 0.2s;
+}
+
+.admin-card:hover {
+  opacity: 1;
+}
+
+.admin-card img {
+  width: 150px;
+  margin-top: 20px;
+  background-color: #ff4654;
+  border-radius: 7px;
+}
+
+.admin-card h5 {
+  color: white;
+  font-size: 20px;
+  font-family: "VALORANT", sans-serif;
+}
+
+.btns {
+  display: flex;
+  column-gap: 20px;
+  margin-top: 20px;
+}
+
+.admin-card button {
+  background: #ff4654;
+  opacity: 0.9;
+  padding-top: 5px;
+  font-size: 24px;
+  border: none;
+  margin: auto auto;
+  border-radius: 7px;
+  color: white;
+}
+
+.del-btn {
+  transition: 0.2s;
+}
+
+.del-btn:hover {
+  background-color: white;
+  color: red;
+}
+
+.edit-btn {
+  transition: 0.2s;
+}
+
+.edit-btn:hover {
+  color: orange;
+  background-color: white;
+}
+
+.edit-form {
+  padding-top: 40px;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 800px) {
+  .admin-cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .card-form {
+    grid-template-columns: 1fr;
+  }
+  .agent-form {
+    max-width: 350px;
+    padding-left: 20px;
+  }
+  .admin-cards {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+    padding-bottom: 20px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .admin-cards {
+    grid-template-columns: 200px;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .agent-form {
+    max-width: 300px;
+    padding-left: 10px;
+  }
+}

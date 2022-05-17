@@ -1,0 +1,108 @@
+.agents__block {
+  background-color: #101822;
+  opacity: 0.9;
+  min-height: 100vh;
+  color: white;
+  padding-bottom: 40px;
+}
+
+.agents__block-content h1 {
+  font-family: "VALORANT", sans-serif;
+  font-size: 64px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.agents__block-content {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
+
+.select-agents {
+  display: grid;
+  grid-template-columns: 170px 170px 170px 170px;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+.agent {
+  position: relative;
+  background-color: #ff4654;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #ff8189;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.agent img {
+  transition: 0.4s;
+}
+
+.bg {
+  transition: 0.4s;
+}
+
+.agent span {
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  transition: 0.4s;
+  font-size: 20px;
+}
+
+.agent:hover span {
+  opacity: 1;
+}
+
+.agent:hover .bg {
+  position: absolute;
+  background-color: #101822;
+  opacity: 1;
+  z-index: 5;
+  top: 0;
+  height: 150px;
+}
+
+.agent:hover .bg img {
+  opacity: 0.1;
+}
+
+.span-name {
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@media all and (max-width: 800px) {
+  .select-agents {
+    grid-template-columns: 170px 170px 170px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .select-agents {
+    grid-template-columns: 170px 170px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .select-agents {
+    grid-template-columns: 160px 160px;
+    gap: 20px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .select-agents {
+    grid-template-columns: 160px;
+    gap: 40px;
+  }
+
+  
+}

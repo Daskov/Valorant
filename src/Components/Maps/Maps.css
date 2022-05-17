@@ -1,0 +1,114 @@
+.footer__block {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: #ece8e1;
+}
+
+.footer__block-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer__block-content img {
+  width: 1125px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+.links img {
+  width: 200px;
+}
+
+.logo-val {
+  width: 190px;
+}
+
+.logo-rio {
+  width: 228px;
+}
+
+.logo-teen {
+  padding-bottom: 40px;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-text ul {
+  list-style: none;
+  color: #18212a;
+}
+
+.footer-text ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 22px;
+}
+
+.footer-text ul li:not(:first-child) {
+  margin-top: 150px;
+}
+
+footer {
+  background-color: #101822;
+  height: 50px;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+}
+
+footer p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 500px) {
+  .links img {
+    width: 100px;
+  }
+
+  .footer__block-content {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-text ul {
+    flex-direction: row;
+    column-gap: 20px;
+  }
+
+  .footer-text ul li:not(:first-child) {
+    margin-top: 0;
+  }
+
+  .footer-text ul li {
+    margin: 0 0 40px;
+    font-size: 12px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .links {
+    margin: 20px auto 0;
+  }
+
+  footer {
+    padding: 5px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}

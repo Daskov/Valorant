@@ -1,0 +1,12 @@
+.animate {
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(100%);
+  position: relative;
+  z-index: 10;
+}
+
+.animate.active {
+  transform: translateY(0);
+  opacity: 1;
+}

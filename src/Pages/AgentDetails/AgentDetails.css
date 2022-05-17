@@ -1,0 +1,90 @@
+.details-block {
+  background-color: #18212a;
+  opacity: 0.9;
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+}
+
+.agent-name {
+  font-size: 64px;
+  font-family: "VALORANT", sans-serif;
+  opacity: 0.3;
+  text-align: center;
+  padding-top: 20px;
+  letter-spacing: 0.5em;
+}
+
+.details__block-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.inf-agent {
+  margin-top: 200px;
+}
+
+.role {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.role-inf {
+  font-size: 64px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.biography {
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+.h-biography {
+  margin-top: 40px;
+}
+
+.img-agent {
+  width: 487px;
+  padding-left: 40px;
+}
+
+@media all and (max-width: 800px) {
+  .img-agent {
+    width: 387px;
+  }
+
+  .inf-agent {
+    margin-top: 100px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .details__block-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .agent-name {
+    font-size: 40px;
+  }
+
+  .inf-agent {
+    margin-top: 50px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .img-agent {
+    width: 287px;
+    padding-left: 0;
+  }
+
+  .role-inf {
+    font-size: 50px;
+  }
+
+  .agent-name {
+    font-size: 30px;
+  }
+}
