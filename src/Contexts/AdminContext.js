@@ -44,6 +44,7 @@ const AdminContext = (props) => {
       });
       console.log(agent);
     });
+    getAgents();
   };
 
   const getAgents = async () => {

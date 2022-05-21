@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { adminContext } from "../../Contexts/AdminContext";
 import "../AdminPage/AdminPage.css";
+import { onAuthStateChanged, getAuth } from "firebase/auth";
 
 const EditPage = () => {
   const data = useContext(adminContext);
@@ -24,6 +25,17 @@ const EditPage = () => {
     saveEditedAgent(editedAgent);
     navigate("/admin-page");
   };
+
+  useEffect(() => {
+    const auth = getAuth();
+    onAuthStateChanged(auth, (user) => {
+      if (user?.email === "daskov2412@gmail.com") {
+        console.log("auth");
+      } else {
+        navigate("/");
+      }
+    });
+  }, []);
 
   useEffect(() => {
     getAgentToEdit(params.id);

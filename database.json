@@ -47,30 +47,6 @@
       "fullImg": "https://i.imgur.com/YvzyFdN.png",
       "biography": "Raze explodes out of Brazil with her big personality and big guns. With her blunt-force-trauma playstyle, she excels at flushing entrenched enemies and clearing tight spaces with a generous dose of “boom.”",
       "id": 6
-    },
-    {
-      "name": "Jett",
-      "role": "Duelist",
-      "iconImg": "https://i.imgur.com/GGmDNot.png",
-      "fullImg": "https://i.imgur.com/nk4vBrs.png",
-      "biography": "Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.",
-      "id": 7
-    },
-    {
-      "name": "Omen",
-      "role": "Controller",
-      "iconImg": "https://i.imgur.com/8TG56Ng.png",
-      "fullImg": "https://i.imgur.com/o2KMEv6.png",
-      "biography": "A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, teleports across the field, then lets paranoia take hold as his foe scrambles to learn where he might strike next.",
-      "id": 8
-    },
-    {
-      "name": "Omen",
-      "role": "Controller",
-      "iconImg": "https://i.imgur.com/8TG56Ng.png",
-      "fullImg": "https://i.imgur.com/o2KMEv6.png",
-      "biography": "A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, teleports across the field, then lets paranoia take hold as his foe scrambles to learn where he might strike next.",
-      "id": 9
     }
   ]
 }

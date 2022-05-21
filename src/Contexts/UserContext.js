@@ -89,6 +89,7 @@ const UserContext = (props) => {
       });
       console.log(feedback);
     });
+    getFeedbacks();
   };
 
   const getFeedbacks = async () => {
